@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rambla&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
@@ -19,10 +22,25 @@
     <div id="pokemon-container">
 
     </div>
-    <div id="#containerButton">
+    <div id="containerButton">
 
     </div>
-    <button id="savePokemones">Guardar pokedex!</button>
+    <div class="flex">
+        <div id="savePokemones" class="button">
+            <div class="button-wrapper">
+                <div class="text">Guardar Pokedex!</div>
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+                </span>
+            </div>
+        </div>
+        <button id="clearPokedex">Limpiar Pokédex</button>
+    </div>
+    
+    <div id="pokedex" class="flex">
+        <h3>Aquí se mostrará tu Pokedex</h3>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="main.js"></script>
 </body>
 </html>
